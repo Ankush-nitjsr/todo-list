@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main class="mainArea">
+      <header>
+        <h2 class="title">Create your Todo-List</h2>
+        <div class="themeToggler">
+          <span>Light</span>
+          <label class="switch">
+            <input type="checkbox" class="themeSwitch" />
+            <span class="slider round"></span>
+          </label>
+          <span>dark</span>
+        </div>
+      </header>
+      <form class="inputTodoForm">
+        <input
+          type="text"
+          placeholder="What are your tasks for today?"
+          class="inputTodo"
+        />
+        <button class="addTaskButton" onclick="submit">Add</button>
+      </form>
+      <div class="listArea">
+        <ul class="toDoList">
+          <li>
+            <span>Task1</span>
+            <button>Edit</button>
+            <button>Completed</button>
+            <button>Delete</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
